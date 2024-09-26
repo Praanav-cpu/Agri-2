@@ -1,0 +1,75 @@
+/* Login Form Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:  #567226;
+  }
+  
+  .login-box {
+    background: linear-gradient();
+    padding: 60px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    width: 450px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.893);
+  }
+  
+  .icon img {
+    width: 180px;
+    margin-bottom: 20px;
+    padding-left: 140px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #ccc;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: gray;
+  }
+  
+  .resend {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .resend a {
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  .signup {
+    margin-top: 20px;
+  }
+  
+  .signup a {
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
