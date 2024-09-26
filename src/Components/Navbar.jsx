@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="bg-green-700 p-4 flex justify-between items-center shadow-md">
+    <nav className="bg-opacity-50 backdrop-blur-md p-4 flex justify-between items-center shadow-md fixed top-0 left-0 w-full z-50">
       {/* Logo Section */}
       <div className="text-white font-bold text-xl tracking-wide cursor-pointer hover:text-green-300">
         LOGO
@@ -56,7 +56,7 @@ const Navbar = () => {
       {/* Login Button */}
       <Link 
         to="/login" 
-        className="bg-green-800 text-white px-5 py-2 rounded-full shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105"
+        className="bg-green-800 bg-opacity-75 text-white px-5 py-2 rounded-full shadow-lg hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105"
       >
         Login
       </Link>
