@@ -1,11 +1,11 @@
 import React from 'react';
-import farmerf from '../assets/farmerf.jpg';
+import farmerf from '../assets/farmerf.png';
 
 const HomePage = () => {
   return (
     <div className="bg-white text-gray-900">
       {/* Hero Section */}
-      <section className="bg-green-700 text-white h-screen flex items-center justify-center flex-col px-4">
+      <section className="bg-green-700 text-white h-screen flex items-center justify-center px-4">
         <div>
         <img 
               src={farmerf}
@@ -15,7 +15,8 @@ const HomePage = () => {
         </div>
         <div>
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-center">
-          Welcome to Our Platform
+        Unlocking the Secrets
+        of Sustainable Agriculture
         </h1>
         <p className="text-lg md:text-2xl mb-8 text-center">
           Empowering you with the best tools and features.
