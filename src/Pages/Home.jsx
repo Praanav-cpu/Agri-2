@@ -52,8 +52,8 @@ const HomePage = () => {
           <p>&copy; 2024 Your Company. All rights reserved.</p>
           <div className="flex space-x-4">
             <a href="#home" className="hover:text-green-300">Home</a>
-            <a href="#about" className="hover:text-green-300">About</a>
-            <a href="#contact" className="hover:text-green-300">Contact</a>
+            <a href="About" className="hover:text-green-300">About</a>
+            <a href="Contact" className="hover:text-green-300">Contact</a>
           </div>
         </div>
       </footer>

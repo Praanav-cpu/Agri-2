@@ -1,26 +1,31 @@
 import React from 'react';
 import './Login.css';
 
-const Login = () => {
+function App() {
   return (
     <div className="login-container">
       <div className="login-box">
-        <div className="icon">
-          <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="user icon" />
-        </div>
-        <h2>Login</h2>
-        <input type="text" placeholder="Enter Mobile Number" />
-        <input type="text" placeholder="Enter OTP" />
-        <div className="resend">
-          <a href="#">Resend OTP?</a>
-        </div>
-        <button>Login</button>
-        <div className="signup">
-          <a href="#">SignUP? If you don't have an account</a>
-        </div>
+        <h1 className="login-title">
+          LOGIN <span className="login-icon"> </span>
+        </h1>
+        <form>
+          <input type="text" placeholder="Enter your name" className="login-input" />
+          <input type="text" placeholder="Enter Mobile number" className="login-input" />
+          <input type="text" placeholder="Enter OTP" className="login-input" />
+          <select className="login-input">
+            <option value="">Login As</option>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+          </select>
+          <button type="submit" className="login-button">Login</button>
+        </form>
+        <p className="signup-text">
+        <button type="submit" className="Signup-button">Sign up</button>
+          Signup if you don’t have an account
+        </p>
       </div>
     </div>
   );
-};
+}
 
-export default Login;
+export default App;

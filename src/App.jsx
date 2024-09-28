@@ -8,7 +8,9 @@ import Login from './Pages/Login';
 import Market from './Pages/Market';
 import Purches from './Pages/Purches';
 import Scheme from './Pages/Scheme';  
-
+import Signup from './Pages/Signup';
+import About from './Pages/About';
+import Store from './Pages/Store';
 
 const App = () => {
   return (
@@ -21,6 +23,10 @@ const App = () => {
         <Route path="/scheme" element={<Scheme />} />
         <Route path="/beseller" element={<BeSeller />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Scheme" element={<Scheme />} />
+        <Route path="/Store" element={<Store />} />
       </Routes>
     </Router>
   );

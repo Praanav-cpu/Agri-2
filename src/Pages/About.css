@@ -1,0 +1,198 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f9;
+  }
+  
+  /* About Section */
+  .about-container {
+    padding: 40px;
+    background-color: #556b2f;
+  }
+  
+  .about-section {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: #556b2f;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* .about-icon {
+    width: 60px;
+    height: auto;
+  } */
+  
+  .about-title h2 {
+    font-size: 36px;
+    color: #ecff20;
+    align-items: center;
+    padding-right: 750px;
+  }
+  
+  .about-text {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+  }
+  img{
+  width: 260px;
+  height: 160px;
+  position: relative;
+  padding-left: -220px;
+  }
+  /* Supply Chain Section */
+  .supply-chain-section {
+    text-align: center;
+    background-color: #536800;
+    padding: 40px 20px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .supply-chain-section h3 {
+    font-size: 30px;
+    color: #e1ff00;
+    margin-bottom: 20px;
+  }
+  
+  .supply-text {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .supply-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .supply-list li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #e1ff00;
+    text-align: left;
+    max-width: 800px;
+    margin: 10px auto;
+  }
+  
+  .supply-list li::before {
+    content: '•';
+    color: #c3ff00;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Team Section */
+  .team-section {
+    text-align: center;
+    background-color: #536800;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-section h3 {
+    font-size: 30px;
+    color: #e1ff00;
+    margin-bottom: 30px;
+  }
+  
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .team-member {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .team-member:hover .team-image {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button Style (optional if you want buttons in any sections) */
+  /* .custom-button {
+    background-color: #2b6cb0;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .custom-button:hover {
+    background-color: #2c5282;
+  } */
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-icon {
+      width: 50px;
+    }
+  
+    .about-title h2 {
+      font-size: 28px;
+    }
+  
+    .supply-chain-section h3, .team-section h3 {
+      font-size: 26px;
+    }
+  
+    .team-image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-title h2 {
+      font-size: 24px;
+    }
+  
+    .team-members {
+      grid-template-columns: 1fr;
+    }
+  
+    .team-image {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  

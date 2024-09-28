@@ -51,6 +51,14 @@ const Navbar = () => {
             Be Seller
           </Link>
         </li>
+        <li>
+          <Link 
+            to="/Store House" 
+            className="text-white font-medium hover:text-green-300 transition duration-200 ease-in-out"
+          >
+            Store House
+          </Link>
+        </li>
       </ul>
       
       {/* Login Button */}

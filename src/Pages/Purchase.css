@@ -1,0 +1,147 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  color: #00840b;
+}
+
+body {
+  background-color: #00840b;
+}
+
+/* Purchase Section */
+.purchase-section {
+  padding: 40px;
+  background-color: #008e05;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.purchase-section h2 {
+  font-size: 36px;
+  color: #2d3748;
+  margin-bottom: 30px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.search-input {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #cbd5e0;
+  border-radius: 8px 0 0 8px;
+  width: 350px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #006721;
+}
+
+.search-btn {
+  padding: 12px;
+  background-color: #2b6cb0;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #2c5282;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.product-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.product-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-item p {
+  font-size: 18px;
+  color: #4a5568;
+  font-weight: bold;
+}
+
+.product-item:hover .product-image {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .purchase-section h2 {
+    font-size: 28px;
+  }
+
+  .search-input {
+    width: 280px;
+  }
+
+  .product-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .product-item p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    width: 240px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image {
+    width: 120px;
+    height: 120px;
+  }
+}

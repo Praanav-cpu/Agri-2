@@ -1,75 +1,110 @@
-/* Login Form Styling */
+/* Main background styling */
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background:  #567226;
-  }
-  
-  .login-box {
-    background: linear-gradient();
-    padding: 60px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-    width: 450px;
-    text-align: center;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.893);
-  }
-  
-  .icon img {
-    width: 180px;
-    margin-bottom: 20px;
-    padding-left: 140px;
-  }
-  
-  h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    background-color: #ccc;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 30px;
-    width: 100%;
-    margin: 20px 0;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: gray;
-  }
-  
-  .resend {
-    text-align: right;
-    margin-top: 10px;
-  }
-  
-  .resend a {
-    color: black;
-    font-size: 12px;
-    text-decoration: none;
-  }
-  
-  .signup {
-    margin-top: 20px;
-  }
-  
-  .signup a {
-    color: black;
-    font-size: 12px;
-    text-decoration: none;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6b8f44 40%, #5f7e39 100%);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Login box styling */
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 50px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 350px;
+}
+
+.login-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Title Styling */
+.login-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #f4f4f4;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.login-icon {
+  font-size: 45px;
+  color: yellow;
+}
+
+/* Input field styling */
+.login-input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.login-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.login-input:focus {
+  outline: none;
+  box-shadow: 0 0 8px #7ca877;
+  border: 1px solid #fff;
+}
+
+/* Button styling */
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #7ca877;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #6a965e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Signup text */
+.signup-text {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0.85;
+}
+
+/* Select dropdown styling */
+select.login-input {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+select.login-input::-ms-expand {
+  display: none;
+}
+
+select.login-input:focus {
+  outline: none;
+  box-shadow: 0 0 8px #7ca877;
+}

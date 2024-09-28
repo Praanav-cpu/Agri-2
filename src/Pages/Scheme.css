@@ -1,0 +1,90 @@
+/* Main container styling */
+.schemes-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #6b8f44;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Farmer Image Section */
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .farmer-image {
+    width: 300px;
+    height: auto;
+  }
+  
+  /* Information Section Styling */
+  .info-section {
+    flex: 2;
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header-text {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #e4f7b7;
+  }
+  
+  .scheme-category {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .scheme-title {
+    font-size: 28px;
+    color: #aa9f9f;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  
+  /* Buttons for Schemes */
+  .scheme-button {
+    display: block;
+    width: 100%;
+    background-color: #afc67a;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    text-align: left;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .scheme-button span {
+    float: right;
+    font-size: 22px;
+    transform: rotate(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .scheme-button:hover {
+    background-color: #94aa65;
+    transform: scale(1.02);
+  }
+  
+  .scheme-button:hover span {
+    transform: translateX(5px);
+  }
+  
